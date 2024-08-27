@@ -1,3 +1,6 @@
+html:
+
+-utilicé la etiqueta section que es para agrupar contenido específico, como en este caso para las distintas descripciones de cada parte de la páagina
 
 css:
 
