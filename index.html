@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#informacion-personal">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos Realizados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="informacion-personal" class="container my-5">
+        <div class="d-flex align-items-center">
+            <img src="./assets/imagen.jfif" alt="Tu Foto" class="rounded-circle img-fluid me-4" style="width: 50%; height: 15%;">
+            <div>
+                <h2>José Patricio Rivera Medina</h2>
+                <p>Ingeniero Civil en Informática</p>
+                <p>A lo largo de mi carrera, he trabajado en proyectos que combinan inteligencia artificial, desarrollo web, y análisis de datos. He desarrollado soluciones como un sistema de estacionamiento inteligente utilizando cámaras y la avanzada tecnología de Yolov8. Además, he colaborado con pequeñas y medianas empresas en la transformación digital, utilizando herramientas como Power BI para realizar análisis de datos que impulsan decisiones estratégicas.</p>
+                <p>Mi visión siempre ha sido mejorar la eficiencia y la competitividad en el mercado mediante la implementación de tecnología avanzada. Desde la creación de inventarios básicos con paginación en REACT hasta la optimización de procesos a través de metodologías ágiles, mi objetivo es encontrar soluciones innovadoras que generen un impacto positivo y duradero.</p>
+                <p>Estoy comprometido con el aprendizaje continuo y la mejora de mis habilidades, y me esfuerzo por mantenerme al día con las últimas tendencias y tecnologías en el campo de la informática. Mi misión es utilizar mis conocimientos y experiencia para ayudar a las empresas a aprovechar al máximo las oportunidades que ofrece la tecnología, mejorando su eficiencia operativa y su capacidad para competir en un mercado cada vez más digitalizado.</p>
+            </div>
+        </div>
+        <div class="button mt-3 text-end">
+            <a href="#" class="btn btn-warning" id="downloadBtn">
+                <span>Descarga CV</span>
+            </a>
+        </div>
+    </section>
+
+    
+    <section id="habilidades" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Habilidades</h2>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">HTML</li>
+                <li class="list-inline-item">CSS</li>
+                <li class="list-inline-item">JavaScript</li>
+                <li class="list-inline-item">Bootstrap</li>
+                <li class="list-inline-item">React</li>
+                <li class="list-inline-item">Python</li>
+                <li class="list-inline-item">Inteligencia Artificial</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section id="proyectos" class="container my-5">
+        <h2 class="text-center">Proyectos Realizados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/Proyecto1.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Estacionamiento Inteligente con Yolov8</h5>
+                        <p class="card-text">Proyecto realizado con cámaras e inteligencia artificial para un estacionamiento automático.</p>
+                        <a href="https://github.com/ICI-UBB/UBBSmartParking" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Análisis de datos</h5>
+                        <p class="card-text">Trabajé con 15 Pymes realizando análisis de datos con Power BI.</p>
+                        <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/Proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Inventario en REACT</h5>
+                        <p class="card-text">Inventario básico con paginación realizado en REACT.</p>
+                        <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>2024 Mi Portafolio.</p>
+    </footer>
+
+    <script src="scrypt.js"></script>
+</body>
+</html>
+
